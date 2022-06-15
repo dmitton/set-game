@@ -23,15 +23,17 @@ export default {
       this.putMatchestoCards();
     },
     getFourCards(){
-      for (let i = 0; i < 4; i++){
+      for (let i = 0; i < 12; i++){
         //get a random index
         var index = Math.floor(Math.random()*81);
         //push it onto the game card list
         this.gameArray.push(this.$root.$data.cards[index]);
       }
+      //prints out the array
+      console.log(this.gameArray);
     },
     putMatchestoCards(){
-
+       
     }
   }
 

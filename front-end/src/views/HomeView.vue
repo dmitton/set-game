@@ -3,6 +3,13 @@
     <div class="start-game">
       <button @click="startGame()">New Game</button>
     </div>
+    <div class="cards-displayed" v-for="card in gameArray" :key="card.id">
+      <div class="photo-image">
+       <p>{{card.pictureUrl}}</p>
+       <img :src="card.pictureUrl" />
+      </div>
+      
+    </div>
   </div>
 </template>
 
